@@ -13,11 +13,13 @@ public class WarAndPeace {
         File text = new File("C:\\dir1\\wp.txt");
         UtilsWAP.textToWords(text);
 
-        for (String word : UtilsWAP.textToWords(text)) {
-            System.out.println(word);
-        }
+//        for (String word : UtilsWAP.textToWords(text)) {
+//            System.out.println(word);
+//        }
         System.out.println("Количество слов: " + UtilsWAP.countOfWords(text));
         System.out.println("Самое длинное слово в тексте: " +UtilsWAP.getLongestWord(text));
+        UtilsWAP.groupeWordsByLength(text);
+//        UtilsWAP.groupeWordsByLength(text);
     }
 
 }
